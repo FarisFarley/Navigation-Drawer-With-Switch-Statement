@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/baseline_dashboard_24"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_requests"
+            android:icon="@drawable/req"
+            android:title="@string/menu_requests" />
+        <item
+            android:id="@+id/nav_tickets"
+            android:icon="@drawable/baseline_sticky_note_2_24"
+            android:title="@string/menu_tickets" />
+    </group>
+
+    <item android:title="@string/settings">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_aggregations"
+                    android:icon="@drawable/agg"
+                    android:title="@string/menu_aggregations" />
+                <item
+                    android:id="@+id/nav_customer_report"
+                    android:icon="@drawable/rep"
+                    android:title="@string/menu_customer_report" />
+                <item
+                    android:id="@+id/nav_sla_reports"
+                    android:icon="@drawable/rep"
+                    android:title="@string/menu_sla_reports" />
+
+                <item
+                    android:id="@+id/nav_stock_reports"
+                    android:icon="@drawable/rep"
+                    android:title="@string/menu_stock_reports" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="@string/custodies">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_consumeable_custodies"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="@string/menu_consumeable_custodies" />
+                <item
+                    android:id="@+id/nav_sim_custodies"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="@string/menu_sim_custodies" />
+                <item
+                    android:id="@+id/nav_terminal_custodies"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="@string/menu_terminal_custodies" />
+            </group>
+        </menu>
+    </item>
+</menu>
